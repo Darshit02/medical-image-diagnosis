@@ -1,0 +1,38 @@
+# Deep Learning
+
+torch
+torchvision
+torchaudio
+
+# Data Processing
+
+numpy
+pandas
+
+# Image Processing
+
+pillow
+opencv-python
+
+# Visualization
+
+matplotlib
+seaborn
+
+# Model Utilities
+
+scikit-learn
+tqdm
+
+# Web Dashboard
+
+streamlit
+
+# API
+
+fastapi
+uvicorn
+
+# Experiment Tracking
+
+mlflow
