@@ -1,0 +1,56 @@
+# Python cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+
+venv/
+.env/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+# Model artifacts
+
+artifacts/
+*.pt
+*.pth
+*.pkl
+
+# Dataset
+
+data/raw/
+data/processed/
+
+# Logs
+
+logs/
+*.log
+
+# MLflow
+
+mlruns/
+mlflow.db
+
+# Docker
+
+*.dockerignore
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE settings
+
+.vscode/
+.idea/
+
+# Temporary files
+
+*.tmp
+*.temp
