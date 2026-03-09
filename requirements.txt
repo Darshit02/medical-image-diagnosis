@@ -27,11 +27,14 @@ tqdm
 # Web Dashboard
 
 streamlit
+streamlit-image-comparison 
+reportlab
 
 # API
 
 fastapi
 uvicorn
+python-multipart
 
 # Experiment Tracking
 
