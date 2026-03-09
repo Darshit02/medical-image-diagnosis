@@ -5,15 +5,18 @@ import torch.optim as optim
 from src.models.model import PneumoniaCNN
 from src.utils.data_loader import train_loader, val_loader
 
+from src.logger import logger
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
 model = PneumoniaCNN().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-
+logger.info("Training started")
 epochs = 5 
 for epoch in range(epochs):
+    logger.info(f"Epoch {epoch+1}/{epochs} started")
     model.train()
     running_loss = 0
      
@@ -56,5 +59,6 @@ for epoch in range(epochs):
     print(f"Validation Accuracy: {accuracy:.2f}%")
 
     torch.save(model.state_dict(), "pneumonia_model.pth")
-
+    logger .info("Model training finished")
     print("Model saved successfully")
+
